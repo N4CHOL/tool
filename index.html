@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,23 +27,14 @@
       gtag("config", "G-DTF3BPLV20");
     </script>
     <!-- End Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DTF3BPLV20"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-DTF3BPLV20");
-    </script>
+
+    <!-- Dialogflow Messenger Scripts -->
     <link
       rel="stylesheet"
       href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
     />
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    
     <df-messenger
       location="us-central1"
       project-id="aiphagweb"
@@ -55,6 +45,7 @@
       <df-messenger-chat-bubble chat-title="Porton bot">
       </df-messenger-chat-bubble>
     </df-messenger>
+    
     <style>
       df-messenger {
         z-index: 999;
