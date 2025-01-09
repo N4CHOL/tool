@@ -1,7 +1,8 @@
-"""portonGdrive URL Configuration
+"""
+URL configuration for portonGdrive project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
+    https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -38,7 +39,7 @@ urlpatterns = [
     path("redoc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
     path("swagger.json", schema_view.without_ui(cache_timeout=0), name="schema-json"),
     path('api/', include('files.urls')),
-    path('api/', include('azure_ocr.urls')),  # Make sure it's included with the /ocr/ route
+    path('api/', include('azure.urls')),  # Make sure it's included with the /ocr/ route
     path('api/', include('users.urls')),
     path('api/auth/', include('login.urls')),  # Login app
 ]
